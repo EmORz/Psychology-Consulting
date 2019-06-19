@@ -10,6 +10,7 @@ namespace Consulting.Model
         {
             this.Diagnoseses = new HashSet<Diagnoses>();
             this.Fees = new HashSet<Fee>();
+            this.Medicaments = new HashSet<Products>();
         }
 
         public FullName FullName { get; set; }
@@ -27,5 +28,7 @@ namespace Consulting.Model
         public ICollection<Fee> Fees { get; set; }
 
         public ICollection<Diagnoses> Diagnoseses { get; set; }
+
+        public ICollection<Products> Medicaments { get; set; }
     }
 }
